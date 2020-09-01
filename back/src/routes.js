@@ -1,13 +1,13 @@
 const express = require('express');
 
-const SessionsController = require('./controllers/SessionsController')
+const SessionController = require('./controllers/SessionController')
 const OngController = require('./controllers/OngController')
 const IncidentController = require('./controllers/IncidentController')
 const ProfileController = require('./controllers/ProfileController')
 
 const routes = express.Router();
 
-routes.post('/sessions', SessionsController.create);
+routes.post('/sessions', SessionController.create);
 
 
 routes.get('/ongs', OngController.get);
